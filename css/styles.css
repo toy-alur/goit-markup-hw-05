@@ -60,19 +60,10 @@ body {
 .link {
   color: inherit;
   text-decoration: none;
-  transition: color var(--transition-effect),
-    background-color var(--transition-effect),
-    box-shadow var(--transition-effect);
 }
 
 .link:visited {
   color: inherit;
-}
-
-.link:hover,
-.link:focus,
-.link:active {
-  color: var(--accent-color);
 }
 
 .btn {
@@ -145,6 +136,13 @@ body {
 
 .nav-link {
   padding: 32px 0;
+  transition: color var(--transition-effect);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: var(--accent-color);
 }
 
 .current {
@@ -179,7 +177,7 @@ body {
   gap: 30px;
 }
 
-.nav-contacts-wrapper {
+.contact-link {
   display: flex;
   align-items: center;
 }
@@ -433,6 +431,8 @@ body {
   border-radius: 50%;
   padding: 12px;
   color: var(--icons-link-color);
+  transition: color var(--transition-effect),
+    background-color var(--transition-effect);
 }
 
 .team-social-link:hover,
@@ -461,13 +461,15 @@ body {
   border: 1px solid var(--icons-link-color);
   border-radius: 4px;
   padding: 16px 32px;
+  transition: color var(--transition-effect),
+    border-color var(--transition-effect);
 }
 
 .customers-link:hover,
 .customers-link:focus,
 .customers-link:active {
-  border-color: var(--accent-color);
   color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .customers-icon {
@@ -525,6 +527,10 @@ body {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
+}
+
+.portfolio-link {
+  transition: box-shadow var(--transition-effect);
 }
 
 .portfolio-link:hover,
@@ -648,6 +654,7 @@ body {
   padding: 12px;
   color: var(--background-color);
   background-color: var(--icons-background-color);
+  transition: background-color var(--transition-effect);
 }
 
 .footer-social-link.link:hover,
